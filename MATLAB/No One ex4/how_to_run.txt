@@ -1,0 +1,7 @@
+For Task A, you need to call function "A" in the command window. 
+The parameter of the function "A" is the intended input image. e.g.: A(taskA)
+
+
+For Task B, you need to call function "B" in the command window.
+The parameter of the function "B" is "trainingB,test1B,test2B", e.g.: B(trainingB,test1B,test2B)
+

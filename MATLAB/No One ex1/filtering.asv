@@ -1,0 +1,47 @@
+function [ output_args ] = filtering( input_args )
+%UNTITLED5 Summary of this function goes here
+%   Detailed explanation goes here
+
+se = strel('square',4);
+a = imopen(input_args,se);
+c = imopen(input_args,se);
+
+b = imclose(input_args,se);
+d = imclose(input_args,se);
+
+e = imerode(input_args,se);
+f = imdilate(input_args,se);
+
+loop = 10;
+
+for var = 1:loop
+    c = imopen(c,se);
+end
+
+for var = 1:loop
+    d = imclose(d,se);
+end
+
+figure;
+imshow(a); title('morphological opening by one pixel');
+
+figure;
+imshow(b); title('morphological closing by one pixel');
+
+figure;
+imshow(c); title('erosion with opening');
+
+figure;
+imshow(d); title('dilation with closing');
+
+figure;
+imshow(e); title('erosion');
+
+figure;
+imshow(f); title('dilation');
+
+%With greater than 2 pixel operation, the results start to look
+%different(which is hardly noticeable with 1 pixel). Our own 
+
+end
+

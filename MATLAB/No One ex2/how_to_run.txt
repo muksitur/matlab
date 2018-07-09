@@ -1,0 +1,2 @@
+You just need to call function "A" in the command window. The parameter of the function "A" is the intended input image.
+

@@ -1,0 +1,6 @@
+1. you need to call the lubin function in the command window.
+
+2. the parameter of this funcion is 3 images (original image, distorted image)
+EX.: lubin(hats,hats_J2K)
+
+N.B.: here, hats.bmp is the original image. hats_J2K.bmp and hats_JPEG.bmp are distorted images.
