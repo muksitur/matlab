@@ -4,7 +4,7 @@ function [ magimg ] = gabor( input, theta )
 %   Detailed explanation goes here
 lambda=3.5; %this is wavelength
 gamma=0.35;
-sigma=0.005;
+sigma=1;
 psi=0;
 
 sigma_x = sigma;
