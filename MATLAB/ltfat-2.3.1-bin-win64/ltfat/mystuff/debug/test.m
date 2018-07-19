@@ -3,7 +3,7 @@ function [ output_args ] = Untitled()
 %   Detailed explanation goes here
 
 file = textread('test1.txt');
-%[m,n] = size(file);
+%%%%[m,n] = size(file);
 %s = spectrogram(file);
 
 figure;
